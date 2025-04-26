@@ -37,3 +37,19 @@ Dentro da scr
 - index.css - estilização 
 - app.test.js - para realizar testes
 - app.js - Parte em que realiza a estrutura do codigo, tudo que alterar nele reflitira na tela
+
+
+============================ JSX ================================
+- O JSX é como um HTML, porém dentro do JSX
+- É a principal maneira de escrever HTML com o React
+- Podemos interpolar variaveis, inserindo entre {}
+- É possivel executar funções em JSX
+- Inserir valores em atributos de tags também
+
+algumas regras normais que no HTML não daria erro, como abrir duas tags de abertura <h1><h1></h1> , Ele ira acussar um erro no navegador e no terminal, pois tecnicamente
+estamos codando em JS, então ele esta sempre validando as linhas
+
+
+- interpolar variaveis
+    Quando é criado uma variavel no React é trabalhado dentro de uma função no JSX, quando criamos algo que não esta sendo usado, ele também reverencia, da um aviso
+    Otmização no React é levada bem a serio
