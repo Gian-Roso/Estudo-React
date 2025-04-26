@@ -1,0 +1,39 @@
+- React é uma bilbioteca para criação de interface
+- utilizado para construir SPAs (Single Page Application) - um arquivo de index para rodar toda a aplicação
+- Baseado em componentes
+- Utiliza o JSX para renderização HTML
+- e aplica o Virtual DOM para realizar as alterações no DOM
+- Pode ser adicionado a um projeto ou criar um projeto com ele
+
+
+
+================ Como instalar o React =========================
+
+- Para instalar o React vamos utilizar uma ferramenta chamada Create React Application
+- Revebemos todos arquivos da biblioteca e termos como executa-la
+- Para utilizar precisamos de note e também npm
+- Esta ferramenta também otimiza o app gerado para produção
+- É possivel iniciar aplicação com o npm start
+
+
+= npx create-react-app my_app
+
+
+Apos a instalação 
+- README.md - arquivo de documentação
+- package.json - arquivo que lista as dependencia e também scripts que executamos
+- package-lock.json - semelhante ao package.json
+- gitignore - ignora arquivos
+- node é a pasta que guarta tanto as proprias dependencia quanto as do react
+
+Dentro da public 
+- robots.txt - leitura de robots
+- manifest.json - manifesto de projeto
+-index.html - Ponto de partida onde o React trabalhara encima dele
+    dentro do arquivo a uma div root em que ele executa o react
+
+Dentro da scr
+- index.js - aqruivo base que realiza o bootstrap onde ele importa o app e executa o root
+- index.css - estilização 
+- app.test.js - para realizar testes
+- app.js - Parte em que realiza a estrutura do codigo, tudo que alterar nele reflitira na tela
