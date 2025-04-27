@@ -53,3 +53,12 @@ estamos codando em JS, então ele esta sempre validando as linhas
 - interpolar variaveis
     Quando é criado uma variavel no React é trabalhado dentro de uma função no JSX, quando criamos algo que não esta sendo usado, ele também reverencia, da um aviso
     Otmização no React é levada bem a serio
+
+
+=================== Componentes ===============================
+- Permite dividir a aplicação em partes
+- Os componentes renderizam JSX, assim como o app.js(que é um componente)
+- Pouco codigo
+- Precisamos cirar um arquivo de componente
+- E importa-lo onde precisamos utilizar
+- Normalmente fica em uma pasta chamada components
