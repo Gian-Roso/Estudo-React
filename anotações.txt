@@ -70,3 +70,20 @@ estamos codando em JS, então ele esta sempre validando as linhas
 - O valor é passado como um atributo na chamada de componente
 - E precisa ser resgatado dentro de uma propriedade/argumento chamada props na função de definição de componente
 - As props são somente de leitura
+
+
+============ Adição de CSS ======================================
+- O CSS pode ser adicionado de forma global na aplicação, por meio do arquivo index.css por exemplo
+- Porém é possivel estilizar a niveis de componentes
+- Utilizamos o CSS modules para isso
+- Basta criar um arquivo como Componente.module.css
+- E chamar este CSS de componente
+
+
+Para entender melhor o CSS modules, é como se ele fosse um modelo especifico para um componente, então quando improtamos ele para um componente
+mesmo que ele tenha um CSS definito para a tag ele sobrescrevera par ao modelo definido para aquele componente
+
+Por React ser uma junção de HTML e JS acaba por cão entender alguns comando como no caso da estilização e recomendavel evitar usar "-" para separação de nomes
+pois no momento de fazer o uso da CSS o JS acaba por não entender o que estamos chamando
+
+================= Fragmentos =========================
