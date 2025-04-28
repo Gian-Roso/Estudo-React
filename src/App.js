@@ -1,29 +1,27 @@
 import './App.css';
 import HelloWord from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
 
-  const name = "Gian"
+  const nome = "João"
 
-  const newName = name.toUpperCase() // aqui estou dizendo que a variavel newName recebe o valor da name e passa esse valor para letras Maiusculas
-
-  function sum(a, b){
-    return a + b
-  }
-
-  const url = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
-  
   return (
-    //class é uma palavra reservada que o React usa, logo não tem como usar class no "HTML", então é posto no lugar ClassName
     <div className="App"> 
-      <h1>Olá Mundo</h1>
-      <p>Meu primeiro app</p>
-      <h2>Alterando o JSX</h2>
-      <p>Olá, {newName} </p>
-      <p>Soma: {2+2}</p>
-      <p>Soma: {sum(2,8)}</p>
-      <img src={url} alt="Minha imagem"/>
       <HelloWord/>
+      <SayMyName nome="Gian"/>
+      {/* Aqui eu adiciono a função criada, junto a propriedade que eu quero chamar, e então defino o valor dela, isso torna a função dinamica*/}
+      <SayMyName nome="Matheus"/>
+      <SayMyName nome={nome}/>
+      {/* também posso usar uma variavel para passar um dado dinamico pela props */}
+
+      <Pessoa 
+        nome="Gian"  
+        idade="20" 
+        profissao="Nenhuma" 
+        foto="https://via.placeholder.com/150"
+      />
     </div>
   );
 }

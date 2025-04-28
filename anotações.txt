@@ -62,3 +62,11 @@ estamos codando em JS, então ele esta sempre validando as linhas
 - Precisamos cirar um arquivo de componente
 - E importa-lo onde precisamos utilizar
 - Normalmente fica em uma pasta chamada components
+
+
+---- Props -----> propriedades
+- Valores passados para os componentes
+- Podemos deixa-los dinamicos
+- O valor é passado como um atributo na chamada de componente
+- E precisa ser resgatado dentro de uma propriedade/argumento chamada props na função de definição de componente
+- As props são somente de leitura
