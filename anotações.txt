@@ -87,3 +87,10 @@ Por React ser uma junção de HTML e JS acaba por cão entender alguns comando c
 pois no momento de fazer o uso da CSS o JS acaba por não entender o que estamos chamando
 
 ================= Fragmentos =========================
+
+- Os React Fragments permite a criação de componentes sem elemento partida
+- O propósito é descompilar os nós do DOM
+- A sintaxe é <> e </>, não há nome para a tag
+- Criamos no proprio JSX
+
+Servira para simplificar o DOM excluido elementos que não estamos utilizando ou esta sme um funcionalidade necessaria
