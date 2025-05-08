@@ -7,8 +7,12 @@ function List() {
         <>
             <h1>Minha lista</h1>
             <ul>
-                <Item marca="ferrari"/>
-                <Item marca="fiat"/>
+                <Item marca="ferrari" lancamento={2005}/>
+                <Item marca="fiat" lancamento={1964}/>
+                {/* Os dois a baixo parecem corretos mas na verdade estão incorretos, pois nos items esta sendo requirido uma string para a marca e um number para o lancamento */}
+                <Item marca={1}/>
+                <Item marca="Renault" lancamento="1995"/>
+                <Item/>
             </ul>
         </>
     )

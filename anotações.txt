@@ -94,3 +94,18 @@ pois no momento de fazer o uso da CSS o JS acaba por não entender o que estamos
 - Criamos no proprio JSX
 
 Servira para simplificar o DOM excluido elementos que não estamos utilizando ou esta sme um funcionalidade necessaria
+
+
+========== Props avançado ===============
+- Podemos definir os tipos para as props, realizando uma especie de validação
+- Definido em um objeto chamado PropTypes no proprio componente
+- e ainda ha a possibilidade de definir um valor padrao
+- neste caso utilizamos o objeto defaultProps
+
+
+=========== Eventos ===================
+- Os eventos de React são os mesmos eventos do DOM
+- Ou seja, temos eventos para responder a um clcik
+- O evento é atrelado a uma tag que irá executá-lo
+- Geralmente um método é atribuido ao evento (função)
+- Este método deve ser criado um componente
