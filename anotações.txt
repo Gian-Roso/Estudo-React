@@ -109,3 +109,9 @@ Servira para simplificar o DOM excluido elementos que não estamos utilizando ou
 - O evento é atrelado a uma tag que irá executá-lo
 - Geralmente um método é atribuido ao evento (função)
 - Este método deve ser criado um componente
+
+======= useState ==========
+- o useState é um hook do React
+- Com ele conseguimos manusear o estado de um componente de forma simples
+- Este hook funciona muito bem com eventos
+- Podemos atrelar um evento a mudança de state
