@@ -121,3 +121,11 @@ Servira para simplificar o DOM excluido elementos que não estamos utilizando ou
 - ou seja, um componente filho pode ativar o metodo do seu ancestral
 - Vamos acessar o metodo por meio de um evento
 - A sintaxe é a mesma de um props de dados props.meuEvento
+
+
+========= renderização por coindição =============
+- Podemos atrelar a exibição de um elemento a um if 
+- Esta ação é uma chamada de renderização condicional
+- Envolvemos as tags em chaves {}
+- Como as chaves executam JS, criamos nossa condiçao
+- é possivel usar state oara criar condições

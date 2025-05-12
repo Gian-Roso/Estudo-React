@@ -6,6 +6,7 @@ import Frase from './components/Frase';
 import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
+import Condicional from './components/Condicional';
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
   return (
     
     <div className="App"> 
-      
+      <Condicional/>
+
       <Form/>
 
       <Evento numero="1"/>
