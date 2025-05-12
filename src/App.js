@@ -18,7 +18,7 @@ function App() {
       <Form/>
 
       <Evento numero="1"/>
-      <Evento numero="2"/>
+      
 
 
       <List/>
