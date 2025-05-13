@@ -7,14 +7,20 @@ import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 function App() {
 
   const nome = "João"
 
+  const meuItens = ['React', 'Vue', 'Angular']
+
   return (
     
     <div className="App"> 
+      <h1>Renderização de listas</h1>
+      <OutraLista Itens={meuItens}/>
+      <OutraLista Itens={[]}/>
       <Condicional/>
 
       <Form/>
