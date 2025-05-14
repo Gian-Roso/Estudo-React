@@ -8,6 +8,9 @@ import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
 import OutraLista from './components/OutraLista';
+import { useState } from 'react';
+import SeuNome from './components/SeuNome';
+import Saldacao from './components/Saldacao';
 
 function App() {
 
@@ -15,9 +18,17 @@ function App() {
 
   const meuItens = ['React', 'Vue', 'Angular']
 
+  const [name, setName] = useState()
+
   return (
     
     <div className="App"> 
+
+      <h1>State lift</h1>
+      <SeuNome setName={setName}/>
+      <Saldacao name={name}/>
+
+
       <h1>Renderização de listas</h1>
       <OutraLista Itens={meuItens}/>
       <OutraLista Itens={[]}/>

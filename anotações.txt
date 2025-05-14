@@ -135,3 +135,9 @@ Servira para simplificar o DOM excluido elementos que não estamos utilizando ou
 - depois utilizamos a função map, para recorrer cada um dos itens
 - Podendo assim renderizar algo na tela
 - É possivel unir operadores condicionais com a renderização de listas
+
+========== State Lift ======================
+- State lift é uma tecnica utilizada para compartilhar state
+- É normal varios componentes dependerem do mesmo estado
+- Então precisamos elevar o nivel do mesmo a um compoente pai 
+- Então centralizamos o state no pai, e definimos quem usa e quem define (setState)
