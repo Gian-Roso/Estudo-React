@@ -141,3 +141,56 @@ Servira para simplificar o DOM excluido elementos que não estamos utilizando ou
 - É normal varios componentes dependerem do mesmo estado
 - Então precisamos elevar o nivel do mesmo a um compoente pai 
 - Então centralizamos o state no pai, e definimos quem usa e quem define (setState)
+
+============ React Router ============
+- O React Router é um pacote para mudança de URLs de aplicação
+- Podemos assim acessar outras views, sem o page reload
+- Trocando apenas uma parte do layout da aplicação, ou seja o que muda de view para view
+- Precisamos instalar este pacote no projeto
+- E também realizarmos algumas mudanças em como o App é estruturado
+
+para instalar - npm install react-router-dom
+
+apos é necessario importar os seguintes pacotes que foram instalados
+    import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+    Crie uma file para navegacao, como no caso a NavBar, e utilize como componente para facilitar a modificação, e então bote para
+    envolver o codigo em um router
+
+    <Router>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/empresa">Empresa</Link>
+        </li>
+        <li>
+          <Link to="/contato">Contato</Link>
+        </li>
+      </ul>
+    </Router>
+
+    Adicionar o <Link> para dizer qual será o link da URLs
+
+Dentro da App adicione quais serão os arquivos acessados pelo routes
+    e usar o switch(Routes) para dizer qual page deve ser utilizada
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/empresa" element={<Empresa />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+
+      element e o que substitui o exact, pois o React não utiliza mais, path dira qual o link
+
+Você pode utilizar um Layout para definir componentes que sempre estarão como principais, e o page para estruturar o que precisar neles, pois serão
+as paginas que você ira acessar
+
+
+========== React Icons ==============
+- O React Icons é um pacote de icones externo
+- Precisamos adicionar ao projeto por meio do npm 
+- Ele nos permite adicionar icones ao projeto com uma sintaxe parecida a de componentes
+- Além disso há uma grande quantidade de ícones disponíveis
+
+Para instalar - npm install react-icons
